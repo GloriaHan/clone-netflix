@@ -1,7 +1,7 @@
 import React from 'react'
-import Header from '../Header'
-import OurStoryCards from '../OurStoryCards'
-import Footer from '../Footer'
+import Header from '../../components/Header'
+import OurStoryCards from '../../components/OurStoryCards'
+import Footer from '../../components/Footer'
 
 export default function LandingPage() {
   return (

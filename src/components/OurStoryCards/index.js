@@ -3,20 +3,7 @@ import React from 'react'
 export default function OurStoryCards() {
   return (
     <>
-      <div>
-        <h1>Unlimited movies, TV shows and more</h1>
-        <p>Watch anywhere. Cancel at any time</p>
-      </div>
-      <div>
-        <p>
-          Ready to watch Netflix? Enter your email to create or restart your
-          membership.
-        </p>
-        <form>
-          <input placeholder="Email address"></input>
-          <button>Get Started</button>
-        </form>
-      </div>
+
       <div>
         <div>popcorn image</div>
         <div>
