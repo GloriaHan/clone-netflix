@@ -1,8 +1,9 @@
 import React from 'react'
+import {Root} from './Footer.style'
 
 export default function Footer() {
   return (
-    <footer>
+    <Root>
       <div>
         Questions? Phone 
         <a href="tel: 1 800404 982">1 800 404 982</a>
@@ -31,6 +32,6 @@ export default function Footer() {
       </div>
       <div>English</div>
       <p>Netflix Australia</p>
-    </footer>
+    </Root>
   )
 }

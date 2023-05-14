@@ -1,0 +1,22 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
+import React from 'react'
+import { Root, HeaderWrap,H1, P1, P2, Form, Input } from './SubHeader.style'
+
+export default function SubHeader() {
+  return (
+    <Root>
+      <HeaderWrap>
+      <H1>Unlimited movies, TV shows and more</H1>
+      <P1>Watch anywhere. Cancel at any time</P1>
+      <P2>
+        Ready to watch Netflix? Enter your email to create or restart your
+        membership.
+      </P2>
+      <Form>
+        <Input placeholder="Email address"></Input>
+        <button>Get Started</button>
+      </Form>
+      </HeaderWrap>
+    </Root>
+  )
+}

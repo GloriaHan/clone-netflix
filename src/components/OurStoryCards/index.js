@@ -1,33 +1,25 @@
 import React from 'react'
+import { PopcornIcon, ArrowRight } from '../../img/Icons'
+import TV1 from '../../img/TV1.png'
+import TV2 from '../../img/TV2.png'
+import KidsPicture from '../../img/KidsPicture.png'
+import DownloadFilm from '../../img/DownloadFilm.jpg'
+import boxshot from '../../img/boxshot.png'
 
 export default function OurStoryCards() {
   return (
     <>
-
       <div>
-        <div>popcorn image</div>
+        <div>
+          <PopcornIcon />
+        </div>
         <div>
           <p>The Netflix you love for just $6.99.</p>
           <p>Get the Standard with ads plan</p>
-          <button>
-            Learn more
-            <svg
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-              class="Hawkins-Icon Hawkins-Icon-Standard"
-              data-name="ChevronRight"
-            >
-              <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
-                d="M7.29297 19.2928L14.5859 12L7.29297 4.70706L8.70718 3.29285L16.7072 11.2928C16.8947 11.4804 17.0001 11.7347 17.0001 12C17.0001 12.2652 16.8947 12.5195 16.7072 12.7071L8.70718 20.7071L7.29297 19.2928Z"
-                fill="currentColor"
-              ></path>
-            </svg>
-          </button>
+          <div>
+            <button>Learn more</button>
+            <ArrowRight />
+          </div>
         </div>
       </div>
       <div>
@@ -36,6 +28,15 @@ export default function OurStoryCards() {
           Watch titles on Smart TVs, Playstation, Xbox, Chromecast, Apple TV,
           Blu-ray players and more.
         </p>
+        <div>
+          <img alt="tv1" src={TV1} />
+          <video controls autoplay playsinline loop muted>
+            <source
+              src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-tv-0819.m4v"
+              type="video/mp4"
+            />
+          </video>
+        </div>
       </div>
       <div>
         <h2>Watch Netflix everywhere</h2>
@@ -43,6 +44,15 @@ export default function OurStoryCards() {
           Stream unlimited movies and TV shows on your phone, tablet, laptop and
           TV.
         </p>
+        <div>
+          <img alt="tv2" src={TV2} />
+          <video controls autoplay playsinline loop muted>
+            <source
+              src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-devices.m4v"
+              type="video/mp4"
+            />
+          </video>
+        </div>
       </div>
       <div>
         <h2>Create profiles for kids</h2>
@@ -50,10 +60,31 @@ export default function OurStoryCards() {
           Send kids on adventures with their favourite characters in a space
           made just for them — free with your membership.
         </p>
+        <div>
+          <img alt="kids" src={KidsPicture} />
+        </div>
       </div>
       <div>
         <h2>Download your shows to watch them offline</h2>
         <p>Only available on ad-free plans.</p>
+        <div>
+          <img alt="films in Phone " src={DownloadFilm} />
+          <div>
+            <img alt="a film poster" src={boxshot} />
+            <div>
+              <p>Stranger Things</p>
+              <p>Downloading</p>
+              <div
+                style={{
+                  background:
+                    "url('https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/download-icon.gif') center center no-repeat",
+                }}
+              >
+                downloading
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
 
       <div>
